@@ -1,0 +1,103 @@
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    .red-grad-btn,
+    .grey-btn {
+        padding: 11px 19px;
+    }
+
+    .section1 h1 {
+        font-size: 28px;
+    }
+
+    .section1 ul.download-list li {
+        margin-bottom: 15px;
+    }
+
+    .section1 hr {
+        margin-top: 40px;
+    }
+
+    .navbar-nav {
+        background-color: #2d2d2d;
+        margin-top: 10px;
+    }
+
+    .section2 .whitebox .redbox {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .section2 .whitebox .redbox .token-box {
+        margin-bottom: 10px;
+    }
+
+    .section2 .whitebox {
+        width: 80%;
+    }
+
+    .section2 .ieo-badge {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .section2 .whitebox .exchanges {
+        margin-bottom: 20px;
+    }
+
+    .section3 .greenbox .iconbox {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .section4 .token-box {
+        margin-bottom: 15px;
+    }
+
+    .section4 .token-box .inner {
+        padding: 33px 18px;
+    }
+
+    .section4 .token-box {
+        min-height: 195px;
+    }
+
+    .section5 {
+        background-image: none;
+        background:#283a54;
+    }
+    .section11 .sheng-token-box .inner-section {
+        padding: 22px;
+    }
+    .section11 .sheng-token-box .bluebox
+    {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        padding-bottom:30px;
+    }
+    .section14 .input-box 
+    {
+        width:100%;
+    }
+    .footer
+    {
+        text-align:center;
+    }
+    .section14
+    {
+        padding-top:0px;
+        padding-bottom:30px;
+    }
+    .section5 .inner-section
+    {
+        padding:0px;
+        margin-bottom:30px;
+    }
+}
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {}
+
+@media (max-width: 1200px) {}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape) {}
