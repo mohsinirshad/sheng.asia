@@ -27,9 +27,10 @@
 
 <body>
 
-        <section class="section1">
+        <section class="section1" id="home">
+        <div class="top-fixed">
                 <div class="container">
-                        <div class="row mb-md-5">
+                        <div class="row">
                                 <div class="col-md-12">
                                         <nav class="navbar navbar-expand-lg">
                                                 <a class="navbar-brand logo" href="index.html"><img src="images/logo.svg" /></a>
@@ -53,24 +54,24 @@
                                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                                         <ul class="navbar-nav ml-auto">
                                                                 <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:">Home</a>
+                                                                        <a class="nav-link js-anchor-link" href="#home">Home</a>
                                                                 </li>
                                                                 <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:">About Us</a>
+                                                                        <a class="nav-link js-anchor-link"  href="#About">About Us</a>
                                                                 </li>
                                                                 <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:">Our Partners</a>
+                                                                        <a class="nav-link js-anchor-link"  href="#Partners">Our Partners</a>
                                                                 </li>
                                                                 <li class="nav-item">
-                                                                        <a class="nav-link active" href="javascript:">IEO<div
+                                                                        <a class="nav-link js-anchor-link"   href="javascript:">IEO<div
                                                                                         class="d-none d-sm-block">
                                                                                 </div></a>
                                                                 </li>
                                                                 <li class="nav-item">
-                                                                        <a class="nav-link" href="#team">Our Team</a>
+                                                                        <a class="nav-link js-anchor-link" href="#Team">Our Team</a>
                                                                 </li>
                                                                 <li class="nav-item">
-                                                                        <a class="nav-link" href="javascript:">Marketplace</a>
+                                                                        <a class="nav-link js-anchor-link" href="#Marketplace">Marketplace</a>
                                                                 </li>
                                                                 <li class="nav-item">
                                                                         <div class="dropdown language-drop">
@@ -87,6 +88,10 @@
                                         </nav>
                                 </div>
                         </div>
+
+                        </div>
+</div>
+                         <div class="container mt-md-5 pt-5">
                         <div class="row pb-md-4 mb-md-5">
                                 <div class="col-md-5 col-sm-12 wow fadeIn" data-wow-delay="0.1s">
                                         <hr class="float-left">
@@ -246,7 +251,7 @@
                 </div>
         </section>
 
-        <section class="section3" id="MeetTeam">
+        <section id="About" class="section3" >
                 <div class="container">
                         <div class="row">
                                 <div class="col-md-6 offset-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.1s">
@@ -1145,7 +1150,7 @@
                 </div>
         </section>
 
-        <section id="team" class="section12">
+        <section id="Team" class="section12">
                 <div class="container wow fadeInUp" data-wow-delay="0.1s">
                         <div class="row">
                                 <div class="col-md-12">
@@ -1211,7 +1216,7 @@
                 </div>
         </section>
 
-        <section class="section13">
+        <section id="Partners" class="section13">
                 <div class="container">
                         <div class="row">
                                 <div class="col-md-12 wow fadeInUp" data-wow-delay="0.1s">
@@ -2098,13 +2103,19 @@ $(document).ready(function(){
         $("#Probitmodal").modal('show');
     });
 
-    $('.meet-team').click(function(e){
+   
+
+   $('.js-anchor-link').click(function(e){
   e.preventDefault();
   var target = $($(this).attr('href'));
   if(target.length){
     var scrollTo = target.offset().top;
     $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
   }
+});
+
+
+
 });
 
 

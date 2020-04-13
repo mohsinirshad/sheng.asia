@@ -1654,6 +1654,16 @@ margin-bottom: 15px;
     color: #d0181f;
 }
 
+.top-fixed
+{
+    background: #444;
+    float: left;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+
 
 
 
